@@ -1,147 +1,151 @@
-// console.log("Количество байт в килобайте = " + 1024 * 1024);
-// console.log("Количество байт в гигабайте = " + 1024 * 1024 * 1024);
-// console.log("Количество байт в 10 гигабайтах = " + 1024 * 1024 * 1024 * 10);
-// console.log("Количество байт в терабайте = " + 1024 * 1024 * 1024 * 1024);
+"use strict";
 
-//Площадь круга по радиусу
-// let circleRadius = 10;
-// const PI = 3.14;
-// let s = PI * circleRadius ** 2;
-// console.log(s);
+//Массивы
 
-//Площадь квадрата
-// let a = 5;
-// let s = a ** 2;
-// console.log(s);
+// let arr = ["a", "b", "c", "d"];
+// alert(arr[0] + "+" + arr[1] + "+" + arr[2] + "+" + arr[3]);
 
-//Площадь прямоугольника
-// let a = 3;
-// let b = 5;
-// let s = a * b;
-// console.log(s);
+// let arr = [1, 2, 3];
+// alert(arr[0] + arr[1] + arr[2]);
 
-// let a = 3;
-// let b = 5;
-// const perimeter = a + a + b + b;
-// console.log(perimeter);
-
-// Перевод температуры Цельсия в Фарентгейт
-// let celsiusЕemperature = 10;
-// let temperatureFahrenheit = celsiusЕemperature * 1.8 + 32;
-// console.log(temperatureFahrenheit);
-
-// Перевод температуры Фарентгейт в Цельсия
-// let tf = 50;
-// let tc = (tf - 32) / 1.8;
-// console.log(tc);
-
-// let a = "" + 3 + 1;
-// alert(a);
-
-// let a = "10";
-// let b = "20";
-// console.log(Number(a) + Number(b));
-
-// alert("2" + Number("3"));
-
-// let a = +"2";
-// let b = +"3";
-// alert(a + b); // выведет '23'
-
-// alert(Number("2s"));
-
-// let num = parseFloat("12.5px");
-// alert(num);
-
-// let a = "5px";
-// let b = "6px";
-// let result = parseInt(a) + parseInt(b);
+// let arr = [2, 5, 3, 9];
+// let result = arr[0] * arr[1] + arr[2] * arr[3];
 // alert(result);
 
-// let a = "5.5px";
-// let b = "6.25px";
-// let result = parseFloat(a) + parseFloat(b);
-// alert(result + "px");
+// let arr = [1, 2, 3, "asf"];
+// alert(arr.length);
 
-// let a = 10;
-// let b = 12;
-// let result = String(a) + String(b);
-// alert(result);
+// let arr = [1, 2, 3, "asf"];
+// alert(arr[arr.length - 1]);
 
-// let a = 544213213;
-// let aRes = String(a).length;
-// let b = 544213213;
-// let bRes = String(b).length;
-// alert(aRes + bRes);
+// let arr = ["a", "b", "c"];
+// arr[0] = 1;
+// arr[1] = -2;
+// arr[2] = -3;
+// alert(arr);
 
-// alert(String(true) + Number(true));
+// let arr = [1, 2, 3, 4];
+// arr[0] += 3;
+// arr[1] += 3;
+// arr[2] += 3;
+// arr[3] += 3;
+// alert(arr);
 
-// let test = Boolean(1 / 0);
-// alert(test);
+// let arr = [1, 2, 3];
+// arr[0]++;
+// arr[1]++;
+// arr[2]++;
+// alert(arr);
 
-// let a = "abcde";
-// let num = 3;
-// alert(a[num]);
-// alert(a[4] + a[3] + a[2] + a[1] + a[0]);
+// let arr = [];
+// arr[0] = 1;
+// arr[1] = 2;
+// arr[2] = 3;
+// alert(arr);
 
-// let str = "abcdes";
-// alert(str[str.length - 3]);
+// let arr = [1, 2, 3];
+// arr[3] = 4;
+// arr[4] = 5;
+// alert(arr);
 
-// let str = "12345";
-// alert(
-//   Number(str[0]) +
-//     Number(str[1]) +
-//     Number(str[2]) +
-//     Number(str[3]) +
-//     Number(str[4])
-// );
+// let arr = [1, 2, 3];
+// arr[5] = "!";
+// alert(arr);
 
-// let str = String(12345);
-// alert(
-//   Number(str[0]) +
-//     Number(str[1]) +
-//     Number(str[2]) +
-//     Number(str[3]) +
-//     Number(str[4])
-// );
+// let arr = [];
+// arr[3] = "a";
+// arr[8] = "b";
+// alert(arr.length);
 
-// let str = String(12345);
-// alert(str[0] * str[1] * str[2] * str[3] * str[4]);
+//Объекты
 
-// let str = String(12345);
-// alert(str[4] + str[3] + str[2] + str[1] + str[0]);
+// let obj = { 1: "a", 2: "b", 3: "c" };
+// // alert(obj[1] + obj[2] + obj[3]);
+// console.log(obj);
 
-// let num = 10;
-// num++;
-// num++;
-// num--;
-// alert(num);
+// let obj = { a: 1, b: 2, c: 3 };
+// console.log(obj["a"] + obj["b"] + obj["c"]);
 
-// let num1 = 0;
-// let num2 = ++num1; // в переменную num2 запишется 1
-// alert(num2); // выведет 1
-// alert(num1);
+// let obj = { "1a": 1, "2b": 2, "c-c": 3 };
+// console.log(obj["1a"] + obj["2b"] + obj["c-c"]);
 
-// let num1 = 3;
-// num1++;
-// let num2 = num1--;
-// alert(num1++);
-// alert(--num2);
+// let obj = { "1a": 1, b2: 2, "с-с": 3, d4: 4 };
 
-// let names = prompt("Ваше имя?");
-// alert("Ваше имя: " + names);
+// let obj = { key1: 1, key2: 2, key3: 3 };
+// console.log(obj.key1 + obj.key2 + obj.key3);
 
-// alert("Ваше имя: " + prompt("Ваще имя?"));
+// let obj = { "1a": 1, b2: 2, "eee-": 3, d4: 4 };
 
-// let num1 = prompt("1 число");
-// let num2 = prompt("2 число");
-// alert(+num1 + +num2);
+// let user = { name: "Alex", surname: "Ruz", patronymic: "Alexandrovig" };
+// console.log(user.name + " " + user.surname + " " + user.patronymic);
 
-// let aUser = +prompt("Какова сторона квадрата?");
-// let res = aUser ** 2;
-// alert(res);
+// let date = { year: 2021, month: 11, day: 22 };
+// console.log(date.year + "-" + date.month + "-" + date.day);
 
-let aUser = +prompt("Какова длина прямоугольника?");
-let bUser = +prompt("Какова ширирна прямоугольника?");
-let res = "Площадь прямогульника: " + aUser * bUser;
-alert(res);
+// let obj = {};
+// obj.a = 1;
+// obj.b = 2;
+// obj.c = 3;
+// console.log(obj);
+
+//Ключи из переменных
+// let arr = ["a", "b", "c"];
+// let key = 2;
+// console.log(arr[key]);
+
+// let arr = [1, 2, 3, 4, 5];
+// let key1 = 1;
+// let key2 = 2;
+// console.log(arr[key1] + arr[key2]);
+
+// let obj = { a: 1, b: 2, c: 3 };
+// let key = "b";
+// console.log(obj[key]);
+
+// let obj = { text: "!!!" };
+// console.log(obj["text"]);
+
+// console.log(Array.isArray({ a: 1, b: 2, c: 3 }));
+
+// let arr1 = [1, 2, 3];
+// let arr2 = arr1;
+
+// arr1[0] = "a";
+// console.log(arr2);
+
+// let arr1 = [1, 2, 3];
+// let arr2 = arr1;
+
+// arr1[0] = "a";
+// arr2[1] = "b";
+
+// console.log(arr1);
+
+// let arr1 = [1, 2, 3];
+// let arr2 = arr1;
+
+// arr1[0] = "a";
+// arr2[0] = "b";
+
+// console.log(arr2);
+
+// let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+// console.log("e" in obj);
+// console.log("f" in obj);
+
+// let obj = { a: 1, b: 2, c: 3, d: 4, e: 5 };
+// delete obj.e;
+// console.log("e" in obj);
+
+// let arr = ["a", "b", "c", "d", "e"];
+// delete arr[1];
+// delete arr[4];
+// console.log(arr);
+
+// const arr = ["a", "b", "c"];
+// arr = ["a", "b", "c"];
+// console.log(arr);
+
+// const arr = [1, 2, 3, 4, 5];
+// const res = arr[1] + arr[2];
+// console.log(res);
